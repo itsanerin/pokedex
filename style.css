@@ -1,0 +1,80 @@
+html {
+    margin: 0;
+}
+
+body {
+    background-image: url(https://thumbs.gfycat.com/HardAgitatedCricket-size_restricted.gif);
+    /* background-image: url(https://thumbs.gfycat.com/PortlySandyHeifer-size_restricted.gif); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template: auto auto / auto;
+    grid-gap: 10%;
+    grid-template-areas:
+    "title"
+    "stage";
+    width: 100%;
+    height: 99.5vh;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+#stage {
+    grid-area: stage;
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    width: 98%;
+    grid-template-areas: "blastoise gyarados kyogre garchomp";
+    justify-items: space-between;
+    /* align-items: center; */
+}
+
+#stage img {
+    width: 100%;
+}
+
+#title {
+    grid-area: title;
+    font-size: 25em;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    color: #486687;
+    letter-spacing: .1em;
+    margin: 0;
+    /* align-self: end; */
+
+text-shadow: 
+	0 .1em 0 #243344, 
+	0 .12em 0 #243344,
+	0 .13em 0 #243344,
+	0 .14em 0 #243344,
+	0 .15em 0 #243344,
+	0 .16em 0 #243344,
+	0 .17em 0 #243344,
+	0 .18em 0 #243344,
+
+	1px .2em .2em #0e141b;
+}
+
+#blastoise {
+    grid-area: blastoise;
+}
+
+#garchomp {
+    grid-area: garchomp;
+    align-self: center;
+}
+
+#kyogre {
+    grid-area: kyogre;
+}
+
+#gyarados {
+    grid-area: gyarados;
+}
+
+#erin {
+    grid-area: erin;
+}
