@@ -37,7 +37,7 @@ body {
 
 #title {
     grid-area: title;
-    font-size: 25em;
+    font-size: 7em;
     text-align: center;
     font-family: 'Black Ops One', cursive;
     color: #486687;
