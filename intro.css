@@ -1,0 +1,67 @@
+/* @font-face {
+    font-family: 'Pokemon Fire Red';
+    src: url('fonts/Pokemon-Fire-Red.woff') format('woff'),
+        url('fonts/Pokemon-Fire-Red.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+#shadow {
+    width: 60%;
+    margin: 0 20%;
+    position: absolute;
+    bottom: 0;
+}
+
+#avatar {
+    width: 60%;
+    margin: 0 20%;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.show {
+    opacity: 1;
+    transition: 1200ms;
+  }
+  
+  .hide {
+    opacity: 0;
+  }  
+
+#dialogue-box {
+    position: absolute;
+    bottom: 2%;
+    min-height: 100px;
+    background-color: white;
+    width: 72%;
+    margin: 0 14%;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#dialogue {
+    width: 97.7%;
+    height: 98%;
+    margin: 1% 1%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: .1em;
+}
+
+#dialogue p {
+    padding: 0 2%;
+}
