@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src: url('fonts/PokemonHollowNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+.stat-grid {
+    width: 40%;
+    display: grid;
+    grid-template: auto auto auto / auto auto;
+    grid-template-areas: 
+    "name idNum"
+    "height height"
+    "weight weight";
+}
+
+p {
+    font-family: 'Pokemon Hollow';
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 0;
+    width: auto;
+}
+
+.name {
+    grid-area: name;
+}
+
+.idNum {
+    grid-area: idNum;
+}
+
+.height {
+    grid-area: height;
+}
+
+.weight {
+    grid-area: weight;
+}
