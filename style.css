@@ -27,7 +27,7 @@ body {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.9);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -68,6 +68,7 @@ text-shadow:
 
 .pokemon{
     position: absolute;
+    grid-area: pokemon;
 }
 
 #blastoise {
@@ -131,4 +132,40 @@ text-shadow:
   
   .hide {
     display: none;
-  }  
+  } 
+
+.stat-grid {
+    width: 100%;
+    grid-area: stats;
+    display: grid;
+    grid-template: auto auto auto / auto auto;
+    grid-template-areas:
+        "name idNum"
+        "height height"
+        "weight weight";
+}
+
+p {
+    /* font-family: 'Pokemon Hollow'; */
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 0;
+    width: auto;
+}
+
+.name {
+    grid-area: name;
+}
+
+.idNum {
+    grid-area: idNum;
+}
+
+.height {
+    grid-area: height;
+}
+
+.weight {
+    grid-area: weight;
+}
