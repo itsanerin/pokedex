@@ -1,11 +1,4 @@
-queryPokemonAPI = async (name) => {
-  let req = await fetch(`https://fizal.me/pokeapi/api/v2/name/${name}.json`)
-  let data = await req.json()
-  console.log(data)
-}
-
 pokemon = document.getElementsByClassName("pokemon")
-// pokeArr = [kyogre, garchomp, gyarados, vaporeon, feralgatr, blastoise]
 
 function addClass(selector, myClass) {
   elements = document.querySelectorAll(selector)

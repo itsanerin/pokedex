@@ -20,7 +20,6 @@ body {
 }
 
 p {
-    /* font-family: 'Pokemon Hollow'; */
     color: white;
     font-size: 20px;
     letter-spacing: 5px;
@@ -42,4 +41,9 @@ p {
 
 .weight {
     grid-area: weight;
+}
+
+.pokemon {
+    position: absolute;
+    grid-area: pokemon;
 }
