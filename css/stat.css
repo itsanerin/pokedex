@@ -26,24 +26,3 @@ p {
     margin: 0;
     width: auto;
 }
-
-.name {
-    grid-area: name;
-}
-
-.idNum {
-    grid-area: idNum;
-}
-
-.height {
-    grid-area: height;
-}
-
-.weight {
-    grid-area: weight;
-}
-
-.pokemon {
-    position: absolute;
-    grid-area: pokemon;
-}

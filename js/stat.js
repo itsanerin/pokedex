@@ -65,7 +65,7 @@ class Pokemon {
         }
         this.abilities = []
         this.types = []
-        this.sprite = data.sprites.front_default
+        this.sprite = `https://www.pkparaiso.com/imagenes/xy/sprites/animados/${data.name}.gif`
 
         for (let i = 0; i < data.abilities.length; i++) {
             this.abilities.push(data.abilities[i].ability.name)
@@ -92,9 +92,7 @@ class Trainer {
     }
 
     addPokemonToParty(pokemon) {
-        if (this.party.length < 6) {
             this.party.push(pokemon)
-        }
     }
 }
 

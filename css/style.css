@@ -137,24 +137,27 @@ text-shadow:
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    /* background-color: rgb(0,0,0); Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
   /* Modal Content/Box */
   #modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: .5em;
+    margin: 5% auto;
+    padding: 10px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 38%;
   }
   
   /* The Close Button */
   .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
   }
   
@@ -167,18 +170,41 @@ text-shadow:
 
   #stat-grid {
       display: grid;
-      grid-template: auto auto / auto auto auto auto auto auto auto auto;
-      grid-template-areas: 
-      "pokemon name"
-      "pokemon idNum"
-      "pokemon height"
-      "pokemon weight"
-      "pokemon hp"
-      "pokemon atk"
-      "pokemon def"
-      "pokemon abilities";
+      grid-template: auto auto auto auto auto / auto auto;
+      grid-template-areas:
+      "name idNum"
+      "sprite sprite"
+      "height weight"
+      "atk def"
+      "hp abilities";
+      justify-items: center;
+      grid-column-gap: 20px;
+      grid-row-gap: 5px;
+      line-height: 1.8em;
   }
 
   #name {
+      grid-area: name;
       text-transform: capitalize;
+  }
+
+  #idNum {
+      grid-area: idNum;
+  }
+
+  #height {
+      grid-area: height;
+  }
+
+  #weight {
+      grid-area: weight;
+  }
+
+  #sprite {
+      grid-area: sprite;
+  }
+
+  .pokemon {
+      position: absolute;
+      grid-area: pokemon;
   }
