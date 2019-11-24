@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,25 +16,40 @@
         <div id="title"></div>
         <div id="stage">
             <img src="images/blastoise.png" id="blastoise" class="pokemon"
-                onclick="blastoise.highlight(); queryPokemonAPI('blastoise'); erin.get('blastoise')">
-            <img src="images/garchomp.png" id="garchomp" class="pokemon"
-                onclick="garchomp.highlight(); queryPokemonAPI('garchomp'); erin.get('garchomp')">
-            <img src="images/kyogre.gif" id="kyogre" class="pokemon"
-                onclick="queryPokemonAPI('kyogre'); erin.get('kyogre')">
-            <img src="images/erin.png" id="trainer" class="pokemon">
-            <img src="images/gyarados.png" id="gyarados" class="pokemon"
-                onclick="gyarados.highlight(); queryPokemonAPI('gyarados'); erin.get('gyarados')">
-            <img src="images/vaporeon.png" id="vaporeon" class="pokemon"
-                onclick="vaporeon.highlight(); queryPokemonAPI('vaporeon'); erin.get('vaporeon')">
-            <img src="images/feraligatr.png" id="feraligatr" class="pokemon"
-                onclick="queryPokemonAPI('feraligatr'); erin.get('feraligatr')">
-        </div>
+                    onclick="queryPokemonAPI('blastoise'); erin.get('blastoise'); showModal();">
 
-        <!-- <h1 id="title">PoKeMoNsTeRs</h1> -->
+            <img src="images/garchomp.png" id="garchomp" class="pokemon"
+                    onclick="queryPokemonAPI('garchomp'); erin.get('garchomp'); showModal();">
+
+            <img src="images/kyogre.gif" id="kyogre" class="pokemon"
+                    onclick="queryPokemonAPI('kyogre'); erin.get('kyogre'); showModal();">
+
+            <img src="images/erin.png" id="trainer">
+
+                <img src="images/gyarados.png" id="gyarados" class="pokemon"
+                        onclick="queryPokemonAPI('gyarados'); erin.get('gyarados'); showModal();">
+
+                <img src="images/vaporeon.png" id="vaporeon" class="pokemon"
+                        onclick="queryPokemonAPI('vaporeon'); erin.get('vaporeon'); showModal();">
+
+                <img src="images/feraligatr.png" id="feraligatr" class="pokemon"
+                        onclick="queryPokemonAPI('feraligatr'); erin.get('feraligatr'); showModal();">
+        </div>
     </div>
 
-    <script src="main.js"></script>
-    <script src="stat.js" async defer></script>
+
+    <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div id="modal-content">
+                  <span class="close" onclick="closeModalX();">&times;</span>
+                </div>
+              
+              </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/stat.js" async defer></script>
 
 </body>
 

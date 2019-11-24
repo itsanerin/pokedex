@@ -80,7 +80,7 @@ text-shadow:
 }
 
 #garchomp {
-    z-index: 1;
+    z-index: 2;
     right: 15%;
     top: 70%;
     width: 33%;
@@ -97,7 +97,7 @@ text-shadow:
 
 #gyarados {
     grid-area: gyarados;
-    z-index: 2;
+    z-index: 1;
     width: 48%;
     right: 8%;
     top: 10%;
@@ -110,7 +110,7 @@ text-shadow:
     left: 33%;
 }
 
-#feralgatr {
+#feraligatr {
     z-index: 4;
     width: 27%;
     top: 58%;
@@ -118,18 +118,67 @@ text-shadow:
 }
 
 #trainer{
+    position: absolute;
     z-index: 7;
     width: 6%;
    left: 47%;
    top: 62%;
 }
 
-.show {
-    width: 50% !important;
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
     left: 0;
-    top: 30% !important;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  .hide {
-    display: none;
-  } 
+  /* Modal Content/Box */
+  #modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #stat-grid {
+      display: grid;
+      grid-template: auto auto / auto auto auto auto auto auto auto auto;
+      grid-template-areas: 
+      "pokemon name"
+      "pokemon idNum"
+      "pokemon height"
+      "pokemon weight"
+      "pokemon hp"
+      "pokemon atk"
+      "pokemon def"
+      "pokemon abilities";
+  }
+
+  #name {
+      text-transform: capitalize;
+  }
